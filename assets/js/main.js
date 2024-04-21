@@ -19,7 +19,7 @@
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
+      $('#preloader').delay(0).fadeOut('slow', function() {
         $(this).remove();
       });
     }
@@ -27,7 +27,7 @@
 
   // Back to top button
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 0) {
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
